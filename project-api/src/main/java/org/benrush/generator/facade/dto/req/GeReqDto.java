@@ -5,13 +5,26 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
 @Data
 @ApiModel("Ge请求体")
 public class GeReqDto {
 
-    @ApiModelProperty("值")
-    @NotBlank(message = "v不能为空")
     private String v;
+
+    private Integer v1;
+
+    private Object v2;
+
+    private Long v3;
+
+    private BigDecimal v4;
+
+    private Short v5;
+
+    private String v6;
+
 
 }

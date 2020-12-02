@@ -9,6 +9,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(basePackages = "org.benrush.generator.server.persistence.mapper")
 @EnableTransactionManagement
 public class ProjectMainApplication {
+    /**
+        初版定稿
+     */
     public static void main(String[] args) {
         SpringApplication.run(ProjectMainApplication.class, args);
     }

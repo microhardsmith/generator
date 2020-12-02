@@ -61,7 +61,7 @@ public class WebLog {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         log.info("Class Method   : {}.{}", signature.getDeclaringTypeName(), signature.getName());
         // 打印入参类型
-        log.info("Parameter Type : {}",signature.getParameterNames());
+        log.info("Parameter Type : {}", (Object) signature.getParameterNames());
         // 打印请求入参
         log.info("Request Args   : {}", Arrays.toString(joinPoint.getArgs()));
     }
